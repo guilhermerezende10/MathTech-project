@@ -16,7 +16,12 @@ function Div (){
     let div1 = Number(document.getElementById("div1").value)
     let div2 = Number(document.getElementById("div2").value)
     let div =  div1 / div2
-    let divResultado = document.getElementById("divResult").innerText = div
+    if (div / 1 != div) {
+        let divResultado = document.getElementById("divResult").innerText = "0"
+    } else {
+        let divResultado = document.getElementById("divResult").innerText = div
+    }
+    
     
 }
 function Multi(){
