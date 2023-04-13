@@ -10,16 +10,18 @@
     --cor4: #074973;
     --cor5: #08678C;
 
-    --fonte-padrao: "poppins", sans-serif;
+
 }
 
 body {
+    
+
     background: var(--cor2);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
 
-    font-family: "poppins";
+    font-family: "poppins", sans-serif;
 }
 
 #title {
@@ -29,6 +31,10 @@ body {
 
 article {
     display: grid;
+    
+}
+
+div {
     
 }
 
@@ -82,7 +88,7 @@ input::-webkit-inner-spin-button {
     border: none;
     border-radius: 5px;
     
-    padding: 10px;
+    padding-bottom: 45px;
     display: grid;
     margin: auto;
     
