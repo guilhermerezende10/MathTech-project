@@ -30,3 +30,11 @@ function Multi(){
     let multi =  multi1 * multi2
     let multiResultado = document.getElementById("multiResult").innerText = multi
 }
+
+Number(document.getElementById("raioEsfera").value)
+
+function VolumeEsfera() {
+    let raioEsfera = Number(document.getElementById("raioEsfera").value)
+    let volEsfera = (4 * 3.14 * raioEsfera**3) / 3
+    let VolResult = document.getElementById("EsferaVolResult").innerText = "Volume: " + volEsfera.toFixed(3) + "cm³"
+}

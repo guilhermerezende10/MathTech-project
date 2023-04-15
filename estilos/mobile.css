@@ -38,7 +38,7 @@ div {
     
 }
 
-#soma, #subtracao, #divisao, #multiplicacao {
+#soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera {
     border-radius: 5px;
     background-color: white;
     color: #011126;
@@ -72,9 +72,18 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-#somaResult, #subResult, #divResult, #multiResult {
+#somaResult, #subResult, #divResult, #multiResult, #volumeDeEsfera {
     border: none;
     display: inline;
+}
+
+#EsferaVolResult {
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+#raioEsfera {
+    margin-bottom: 5px;
 }
 
 #submit {

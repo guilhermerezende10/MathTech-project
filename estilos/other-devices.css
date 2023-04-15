@@ -13,7 +13,7 @@ Grandes Telas: min 1200px
 */
 
 @media screen and (min-width:768px) {
-    #soma, #subtracao, #divisao, #multiplicacao {
+    #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera {
         border-radius: 5px;
         background-color: white;
         color: #011126;
@@ -73,7 +73,7 @@ Grandes Telas: min 1200px
              
         }
 
-        #soma, #subtracao, #divisao, #multiplicacao {
+        #soma, #subtracao, #divisao, #multiplicacao,#volumeDeEsfera {
             border-radius: 5px;
             background-color: white;
             color: #011126;
@@ -140,7 +140,7 @@ Grandes Telas: min 1200px
             
         }
 
-        #soma, #subtracao, #divisao, #multiplicacao {
+        #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera {
             border-radius: 5px;
             background-color: white;
             color: #011126;
