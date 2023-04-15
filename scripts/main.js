@@ -35,6 +35,6 @@ Number(document.getElementById("raioEsfera").value)
 
 function VolumeEsfera() {
     let raioEsfera = Number(document.getElementById("raioEsfera").value)
-    let volEsfera = (4 * 3.14 * raioEsfera**3) / 3
-    let VolResult = document.getElementById("EsferaVolResult").innerText = "Volume: " + volEsfera.toFixed(3) + "cm³"
+    let volEsfera = 4/3 * 3.14 * raioEsfera**3
+    let VolResult = document.getElementById("EsferaVolResult").innerText = "Volume: " + volEsfera.toFixed(1) + "cm³"
 }
