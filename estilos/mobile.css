@@ -15,8 +15,7 @@
 
 body {
     
-
-    background: var(--cor2);
+    background: linear-gradient(to left top, #011126, #032859);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -31,14 +30,61 @@ body {
 
 article {
     display: grid;
+    margin-top: 40px;
     
 }
 
-div {
+#container {
+    display: grid;
+    justify-content: center;
+    
+
+}
+
+#menu {
+    display: block;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#container > a {
+    
+    margin: 1px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: #011126;
+    padding: 20px 0px;
+    width: 96vw;
     
 }
 
-#soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera {
+#container > a:hover {
+    background-color: #032859;
+
+}
+
+#AreaDoTriangulo {
+    border-radius: 5px;
+    background-color: white;
+    color: #011126;
+
+    text-align: center;
+
+    display: inline-block;
+    margin: auto;
+    border-radius: 10px;
+
+    width: 300px;
+    height: 215px;
+
+    margin-bottom: 20px;
+
+}
+
+
+#soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera, #AreaDoCirculo {
     border-radius: 5px;
     background-color: white;
     color: #011126;
@@ -86,6 +132,16 @@ input::-webkit-inner-spin-button {
     margin-bottom: 5px;
 }
 
+#areaCircResult {
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+#raioCirculo {
+    margin-bottom: 5px;
+}
+
+
 #submit {
     font-family: "poppins";
 
@@ -103,4 +159,19 @@ input::-webkit-inner-spin-button {
     
     
 }
+
+#inicio {
+    color: white;
+    text-decoration: none;
+    background-color: #000000;
+    padding: 10px;
+    width: 50px;
+    border-radius: 10px; }
+    
+
+#inicio:hover {
+    transition: 1s;
+    background-color: #074973;
+}
+
 

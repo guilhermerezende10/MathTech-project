@@ -13,7 +13,7 @@ Grandes Telas: min 1200px
 */
 
 @media screen and (min-width:768px) {
-    #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera {
+    #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera, #volumeDeEsfera, #AreaDoCirculo, #AreaDoTriangulo {
         border-radius: 5px;
         background-color: white;
         color: #011126;
@@ -25,11 +25,13 @@ Grandes Telas: min 1200px
         border-radius: 10px;
     
         width: 500px;
-        height: 300px;
+        height: 280px;
     
         margin-bottom: 20px;
     
     }
+
+   
 
     input {
         height: 40px;
@@ -60,7 +62,30 @@ Grandes Telas: min 1200px
         font-size: 1em;
         
         
+        
     }
+
+    
+
+    #container  {
+        display: flex;
+        
+        
+        
+    }
+    #container > a {
+        transition: 0.5s;
+        padding: 10px 25px;
+        border-radius: 5px;
+        
+    }
+
+    #menu {
+        display: none;
+        
+    }
+   
+    
 }
 
 
@@ -73,7 +98,7 @@ Grandes Telas: min 1200px
              
         }
 
-        #soma, #subtracao, #divisao, #multiplicacao,#volumeDeEsfera {
+        #soma, #subtracao, #divisao, #multiplicacao,#volumeDeEsfera, #AreaDoCirculo, #AreaDoTriangulo {
             border-radius: 5px;
             background-color: white;
             color: #011126;
@@ -129,6 +154,9 @@ Grandes Telas: min 1200px
             
             
         }
+
+       
+        
     }
         
 
@@ -140,7 +168,7 @@ Grandes Telas: min 1200px
             
         }
 
-        #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera {
+        #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera, #AreaDoCirculo, #AreaDoTriangulo {
             border-radius: 5px;
             background-color: white;
             color: #011126;
@@ -157,12 +185,12 @@ Grandes Telas: min 1200px
             margin: 40px;
         
         }
-        #subtracao {
+        #subtracao, #AreaDoCirculo {
             padding-top: 15px;
             
         }
 
-        #soma {
+        #soma , #AreaDoTriangulo{
             padding-bottom: 15px;
         }
     

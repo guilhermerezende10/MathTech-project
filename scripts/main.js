@@ -31,7 +31,19 @@ function Multi(){
     let multiResultado = document.getElementById("multiResult").innerText = multi
 }
 
-Number(document.getElementById("raioEsfera").value)
+function AreaCirculo() {
+    let raioCirculo = Number(document.getElementById("raioCirculo").value)
+    let AreaCirculo = 3.14 * raioCirculo**2
+    let AreaCircResult = document.getElementById("areaCircResult").innerText = "Area = " + AreaCirculo.toFixed(2) + "cm³"
+}
+
+function AreaTriangulo() {
+    let baseTriangulo = Number(document.getElementById("baseTriangulo").value)
+    let alturaTriangulo = Number(document.getElementById("alturaTriangulo").value)
+    let areaTriangulo = baseTriangulo * alturaTriangulo / 2
+    let AreaTriResult = document.getElementById("areaTriResult").innerText = "Area = " + areaTriangulo.toFixed(2) + "cm³"
+}
+
 
 function VolumeEsfera() {
     let raioEsfera = Number(document.getElementById("raioEsfera").value)
@@ -39,3 +51,19 @@ function VolumeEsfera() {
     let VolResult = document.getElementById("EsferaVolResult").innerText = "Volume ≅ " + volEsfera.toFixed(1) + "cm³"
 }
 
+
+function clickMenu() {
+    if (container.style.display == 'grid') {
+        container.style.display = 'none'
+    } else {
+        container.style.display = 'grid'
+    }
+}
+
+function mudouTamanho() {
+    if (window.innerWidth >= 768) {
+        container.style.display = 'flex'
+    } else {
+        container.style.display = 'none'
+    }
+}
