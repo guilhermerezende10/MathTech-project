@@ -129,16 +129,19 @@ Grandes Telas: min 1200px
     @media screen and (min-width:1024px) {
         article {
             display: grid;
+            justify-content: center;
              
         }
 
         #soma, #subtracao, #divisao, #multiplicacao,#volumeDeEsfera, #AreaDoCirculo, #AreaDoTriangulo {
+            
+
             border-radius: 5px;
             background-color: white;
             color: #011126;
         
             text-align: center;
-    
+            
             margin: auto;
             border-radius: 10px;
         
@@ -233,9 +236,9 @@ Grandes Telas: min 1200px
 
 
         article {
-            text-align: center;
             display: grid;
-            
+            justify-content: center;
+             
         }
 
         #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera {
@@ -245,7 +248,6 @@ Grandes Telas: min 1200px
         
             text-align: center;
 
-            display: grid;
             
             margin: auto;
             border-radius: 10px;
