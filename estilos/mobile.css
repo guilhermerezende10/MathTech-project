@@ -49,7 +49,6 @@ article {
 }
 
 #container > a {
-    
     margin: 1px;
     text-align: center;
     color: white;
@@ -61,11 +60,13 @@ article {
 }
 
 #container > a:hover {
-    background-color: #032859;
+
+    background: linear-gradient(to left top, var(--cor4), #032859);
+    
 
 }
 
-#AreaDoTriangulo {
+#AreaDoLosango , #AreaDoTriangulo, #AreaDoRetangulo {
     border-radius: 5px;
     background-color: white;
     color: #011126;
@@ -77,14 +78,15 @@ article {
     border-radius: 10px;
 
     width: 300px;
-    height: 215px;
+    height: 245px;
 
     margin-bottom: 20px;
-
 }
 
 
-#soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera, #AreaDoCirculo {
+
+
+#soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera {
     border-radius: 5px;
     background-color: white;
     color: #011126;
@@ -100,6 +102,23 @@ article {
 
     margin-bottom: 20px;
 
+}
+
+#AreaDoCirculo, #AreaDoPentagono, #AreaDoQuadrado {
+    border-radius: 5px;
+    background-color: white;
+    color: #011126;
+
+    text-align: center;
+
+    display: inline-block;
+    margin: auto;
+    border-radius: 10px;
+
+    width: 300px;
+    height: 190px;
+
+    margin-bottom: 20px;
 }
 
 input {
@@ -118,11 +137,6 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-#somaResult, #subResult, #divResult, #multiResult, #volumeDeEsfera {
-    border: none;
-    display: inline;
-}
-
 #EsferaVolResult {
     margin: 0px;
     padding-bottom: 5px;
@@ -132,12 +146,7 @@ input::-webkit-inner-spin-button {
     margin-bottom: 5px;
 }
 
-#areaCircResult {
-    margin: 0px;
-    padding-bottom: 5px;
-}
-
-#raioCirculo {
+#raioCirculo, #ladoQuadrado, #ladoPentagono {
     margin-bottom: 5px;
 }
 

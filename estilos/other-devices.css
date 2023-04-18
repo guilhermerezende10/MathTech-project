@@ -13,7 +13,7 @@ Grandes Telas: min 1200px
 */
 
 @media screen and (min-width:768px) {
-    #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera, #volumeDeEsfera, #AreaDoCirculo, #AreaDoTriangulo {
+    #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera, #volumeDeEsfera  {
         border-radius: 5px;
         background-color: white;
         color: #011126;
@@ -30,6 +30,41 @@ Grandes Telas: min 1200px
         margin-bottom: 20px;
     
     }
+
+    #AreaDoTriangulo, #AreaDoCirculo, #AreaDoLosango, #AreaDoRetangulo {
+        border-radius: 5px;
+        background-color: white;
+        color: #011126;
+    
+        text-align: center;
+    
+        display: inline-block;
+        margin: auto;
+        border-radius: 10px;
+    
+        width: 500px;
+        height: 320px;
+    
+        margin-bottom: 20px;
+    
+    }
+    #AreaDoCirculo, #AreaDoPentagono, #AreaDoQuadrado {
+        border-radius: 5px;
+        background-color: white;
+        color: #011126;
+    
+        text-align: center;
+    
+        display: inline-block;
+        margin: auto;
+        border-radius: 10px;
+    
+        width: 500px;
+        height: 250px;
+    
+        margin-bottom: 20px;
+    }
+
 
    
 
@@ -93,8 +128,7 @@ Grandes Telas: min 1200px
 
     @media screen and (min-width:1024px) {
         article {
-            display: inline-block;
-            text-align: center;
+            display: grid;
              
         }
 
@@ -114,6 +148,41 @@ Grandes Telas: min 1200px
             margin-bottom: 10px;
             margin: 40px;
         
+        }
+
+        #AreaDoTriangulo, #AreaDoCirculo, #AreaDoLosango, #AreaDoRetangulo {
+            border-radius: 5px;
+            background-color: white;
+            color: #011126;
+        
+            text-align: center;
+        
+            display: inline-block;
+            margin: auto;
+            border-radius: 10px;
+        
+            width: 600px;
+            height: 320px;
+        
+            margin-bottom: 20px;
+        
+        }
+        #AreaDoCirculo, #AreaDoPentagono, #AreaDoQuadrado {
+
+            border-radius: 5px;
+            background-color: white;
+            color: #011126;
+        
+            text-align: center;
+        
+            display: inline-block;
+            margin: auto;
+            border-radius: 10px;
+        
+            width: 600px;
+            height: 250px;
+        
+            margin-bottom: 20px;
         }
 
         #subtracao {
@@ -162,18 +231,21 @@ Grandes Telas: min 1200px
 
     @media screen and (min-width:1919px) {
 
+
         article {
-            display: inline-block;
             text-align: center;
+            display: grid;
             
         }
 
-        #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera, #AreaDoCirculo, #AreaDoTriangulo {
+        #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera {
             border-radius: 5px;
             background-color: white;
             color: #011126;
         
             text-align: center;
+
+            display: grid;
             
             margin: auto;
             border-radius: 10px;
@@ -185,15 +257,24 @@ Grandes Telas: min 1200px
             margin: 40px;
         
         }
-        #subtracao, #AreaDoCirculo {
+        #subtracao {
             padding-top: 15px;
+            
             
         }
 
-        #soma , #AreaDoTriangulo{
+        #soma{
             padding-bottom: 15px;
         }
-    
+
+
+        #areaTriResult, #areaLosResult, #areaRetResult {
+            padding-bottom: 5px;
+        }
+        
+        #areaQuadResult, #areaPentResult, #areaCircResult {
+            padding-bottom: 15px;
+        }
         input {
             height: 40px;
             width: 80px;

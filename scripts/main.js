@@ -34,14 +34,40 @@ function Multi(){
 function AreaCirculo() {
     let raioCirculo = Number(document.getElementById("raioCirculo").value)
     let AreaCirculo = 3.14 * raioCirculo**2
-    let AreaCircResult = document.getElementById("areaCircResult").innerText = "Area = " + AreaCirculo.toFixed(2) + "cm³"
+    let AreaCircResult = document.getElementById("areaCircResult").innerText = "Area = " + AreaCirculo.toFixed(2) + "cm²"
 }
 
 function AreaTriangulo() {
     let baseTriangulo = Number(document.getElementById("baseTriangulo").value)
     let alturaTriangulo = Number(document.getElementById("alturaTriangulo").value)
     let areaTriangulo = baseTriangulo * alturaTriangulo / 2
-    let AreaTriResult = document.getElementById("areaTriResult").innerText = "Area = " + areaTriangulo.toFixed(2) + "cm³"
+    let AreaTriResult = document.getElementById("areaTriResult").innerText = "Area = " + areaTriangulo.toFixed(2) + "cm²"
+}
+
+function AreaLosango() {
+    let diametromenor = Number(document.getElementById("diametroMenorLosango").value)
+    let diametromaior = Number(document.getElementById("diametroMaiorLosango").value)
+    let areaLosango = diametromaior * diametromenor / 2
+    let AreaLosResult = document.getElementById("areaLosResult").innerText = "Area = " + areaLosango.toFixed(2) + "cm²"
+}
+
+function AreaPentagono() {
+    let ladoPentagono = Number(document.getElementById("ladoPentagono").value)
+    let AreaPentagono1 = (ladoPentagono / 1.453)
+    let AreaPentagono = 5 * ladoPentagono * AreaPentagono1
+    let AreaPentResult = document.getElementById("areaPentResult").innerText = "Area = " + AreaPentagono.toFixed(2) + "cm²"
+}
+function AreaQuadrado() {
+    let ladoQuadrado = Number(document.getElementById("ladoQuadrado").value)
+    let AreaQuadrado = ladoQuadrado**2
+    let AreaQuadResult = document.getElementById("areaQuadResult").innerText = "Area = " + AreaQuadrado.toFixed(2) + "cm²"
+}
+
+function AreaRetangulo() {
+    let baseRetangulo = Number(document.getElementById("baseRetangulo").value)
+    let alturaRetangulo = Number(document.getElementById("alturaRetangulo").value)
+    let areaRetangulo = baseRetangulo * alturaRetangulo
+    let AreaRetResult = document.getElementById("areaRetResult").innerText = "Area = " + areaRetangulo.toFixed(2) + "cm²"
 }
 
 
