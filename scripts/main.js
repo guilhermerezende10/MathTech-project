@@ -74,7 +74,26 @@ function AreaRetangulo() {
 function VolumeEsfera() {
     let raioEsfera = Number(document.getElementById("raioEsfera").value)
     let volEsfera = 4/3 * 3.14 * raioEsfera**3
-    let VolResult = document.getElementById("EsferaVolResult").innerText = "Volume ≅ " + volEsfera.toFixed(1) + "cm³"
+    let VolumeEsfResult = document.getElementById("EsferaVolResult").innerText = "Volume ≅ " + volEsfera.toFixed(1) + "cm³"
+}
+
+function VolumeCilindro() {
+    let raioCilindro = Number(document.getElementById("raioCilindro").value)
+    let alturaCilindro = Number(document.getElementById("alturaCilindro").value)
+    let volumeCilindro = 3.14 * raioCilindro**2 * alturaCilindro
+    let VolumeCilResult = document.getElementById("volumeCilResult").innerText = "Volume ≅ " + volumeCilindro.toFixed(2) + "cm²"
+}
+function VolumeCone() {
+    let raioCone = Number(document.getElementById("raioCone").value)
+    let alturaCone = Number(document.getElementById("alturaCone").value)
+    let volumeCone = 3.14 * raioCone ** 2 * alturaCone / 3
+    let VolumeConeResult = document.getElementById("volumeConeResult").innerText = "Volume ≅ " + volumeCone.toFixed(2) + "cm²"
+}
+
+function VolumeCubo() {
+    let arestaCubo = Number(document.getElementById("arestaCubo").value)
+    let volCubo = arestaCubo ** 3
+    let VolumeCuboResult = document.getElementById("CuboVolResult").innerText = "Volume ≅ " + volCubo.toFixed(2) + "cm³"
 }
 
 

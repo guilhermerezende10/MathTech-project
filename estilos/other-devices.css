@@ -13,7 +13,7 @@ Grandes Telas: min 1200px
 */
 
 @media screen and (min-width:768px) {
-    #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera, #volumeDeEsfera  {
+    #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera, #volumeDeEsfera, #volumeDeCubo  {
         border-radius: 5px;
         background-color: white;
         color: #011126;
@@ -31,7 +31,7 @@ Grandes Telas: min 1200px
     
     }
 
-    #AreaDoTriangulo, #AreaDoCirculo, #AreaDoLosango, #AreaDoRetangulo {
+    #AreaDoTriangulo, #AreaDoCirculo, #AreaDoLosango, #AreaDoRetangulo, #volumeDeCilindro, #volumeDeCone {
         border-radius: 5px;
         background-color: white;
         color: #011126;
@@ -133,7 +133,7 @@ Grandes Telas: min 1200px
              
         }
 
-        #soma, #subtracao, #divisao, #multiplicacao,#volumeDeEsfera, #AreaDoCirculo, #AreaDoTriangulo {
+        #soma, #subtracao, #divisao, #multiplicacao, #AreaDoCirculo, #AreaDoTriangulo {
             
 
             border-radius: 5px;
@@ -153,7 +153,7 @@ Grandes Telas: min 1200px
         
         }
 
-        #AreaDoTriangulo, #AreaDoCirculo, #AreaDoLosango, #AreaDoRetangulo {
+        #AreaDoTriangulo, #AreaDoLosango, #AreaDoRetangulo, #volumeDeCilindro, #volumeDeCone {
             border-radius: 5px;
             background-color: white;
             color: #011126;
@@ -168,9 +168,10 @@ Grandes Telas: min 1200px
             height: 320px;
         
             margin-bottom: 20px;
+            margin: 40px;
         
         }
-        #AreaDoCirculo, #AreaDoPentagono, #AreaDoQuadrado {
+        #AreaDoCirculo, #AreaDoPentagono, #AreaDoQuadrado, #volumeDeEsfera, #volumeDeCubo  {
 
             border-radius: 5px;
             background-color: white;
@@ -184,6 +185,7 @@ Grandes Telas: min 1200px
         
             width: 600px;
             height: 250px;
+            margin: 40px;
         
             margin-bottom: 20px;
         }
@@ -223,9 +225,13 @@ Grandes Telas: min 1200px
             margin: auto;
     
             font-size: 1em;
+
+            margin-top: 5px;
             
             
         }
+
+        
 
        
         
@@ -241,7 +247,7 @@ Grandes Telas: min 1200px
              
         }
 
-        #soma, #subtracao, #divisao, #multiplicacao, #volumeDeEsfera {
+        #soma, #subtracao, #divisao, #multiplicacao {
             border-radius: 5px;
             background-color: white;
             color: #011126;
@@ -270,7 +276,7 @@ Grandes Telas: min 1200px
         }
 
 
-        #areaTriResult, #areaLosResult, #areaRetResult {
+        #areaTriResult, #areaLosResult, #areaRetResult, #volCilResult, #volumeDeCone {
             padding-bottom: 5px;
         }
         
