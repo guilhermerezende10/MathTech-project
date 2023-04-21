@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500&display=swap');
+
+
+  :root {
+    --cor1: #011126;
+    --cor2: #011C40;
+    --cor3: #032859;
+    --cor4: #074973;
+    --cor5: #08678C;
+
+
+}
+
+body {
+
+    height: 100vh;
+    
+    background: linear-gradient(to left top, #011126, #032859);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    
+
+    font-family: "poppins", sans-serif;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #011126; 
+    
+}
+
+#container {
+    display: grid;
+    justify-content: center;
+
+    margin-bottom: 40px;
+    
+
+}
+
+#menu {
+    display: block;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#container > a {
+    margin: 1px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: #011126;
+    padding: 20px 0px;
+    width: 96vw;
+    
+}
+
+#container > a:hover {
+
+    background: linear-gradient(to left top, var(--cor4), #032859);
+    
+
+}
+
+input {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: rgb(231, 231, 231);
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+header {
+    color: white;
+    text-align: center;
+}
+
+#sec {
+    
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.342);
+    
+}
+
+#seltab {
+    display: none;
+
+    width: 300px;
+    height: 1800px;
+    padding: 10px;
+
+    text-align: justify;
+    padding-left: 27%;
+    font-size: 14px;
+
+    overflow-y: hidden;
+
+    margin: auto;
+}
+
+#submit {
+
+    background-color: gray;
+    color: white;
+
+    width: 130px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+#submit:hover {
+    background-color: rgb(180, 180, 180);
+    cursor: pointer;
+}

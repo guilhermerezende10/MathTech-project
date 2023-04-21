@@ -112,3 +112,27 @@ function mudouTamanho() {
         container.style.display = 'none'
     }
 }
+
+function tabuada() {
+    let num = document.getElementById('txtn')
+    let tab = document.getElementById('seltab')
+
+    if (num.value.length == 0) {  
+        window.alert('Please, enter a number.')
+    } else {
+        
+            seltab.style.display = 'block'
+            sec.style.height = '2025px'
+            document.body.style.height = '100%'
+        
+        let n = Number(num.value)
+        tab.innerHTML = ''  
+        for (let c = 1 ;c <= 100; c++ ) {
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            tab.appendChild(item)
+       
+        }
+        
+    }
+}

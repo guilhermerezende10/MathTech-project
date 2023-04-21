@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MathTech</title>
-    <link rel="stylesheet" href="../estilos/mobile.css">
+    <link rel="stylesheet" href="../estilos/tabuada-devices.css">
+    <link rel="stylesheet" href="../estilos/tabuada-mobile.css">
     <link rel="shortcut icon" href="../mt-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../estilos/other-devices.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
@@ -20,21 +20,24 @@
         <a href="index.html">Operações Básicas</a>
         <a href="areas.html">Areas</a>
         <a href="volumes.html">Volumes</a>
-        <a href="equa1.html">Equação de 1º grau</a>
-        <a href="equa2.html">Equação de 2º grau</a>
+        <a href="equa1.html">Equação 1º grau</a>
+        <a href="equa2.html">Equação 2º grau</a>
         <a href="tabuada.html">Tabuada</a>
     </div>
     <article>
-        
-        <div id="soma">
-            <h1>Soma</h1> 
-            <input type="number" name="number one" id="soma1" > +
-            <input type="number" name="number two" id="soma2"> =
-            <div id="somaResult"></div>
-            <p><button type="submit" id="submit" onclick="Soma()"><p>Resultado</p></button></p>
-            
-        </div>
-        <a href="index.html" id="inicio">Voltar</a>
+        <section id="sec">
+            <div>
+                <h1>Tabuada</h1>
+                <p>Número: <input type="number" name="num" id="txtn" placeholder="Digite o número aqui">
+                           <input type="button"  id="submit" value="Gerar tabuada" onclick="tabuada()">
+               </p>
+            </div>
+            <div>
+                <select name="tabuada" id="seltab" size="10">
+                  
+                </select>
+            </div>
+        </section>
     </article>
     <script src="../scripts/main.js"></script>
 </body>
