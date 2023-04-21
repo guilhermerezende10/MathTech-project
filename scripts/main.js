@@ -108,8 +108,10 @@ function clickMenu() {
 function mudouTamanho() {
     if (window.innerWidth >= 768) {
         container.style.display = 'flex'
+        //menu.style.display = 'none'
     } else {
         container.style.display = 'none'
+        //menu.style.display = 'block'
     }
 }
 
@@ -122,7 +124,7 @@ function tabuada() {
     } else {
         
             seltab.style.display = 'block'
-            sec.style.height = '2025px'
+            sec.style.height = '2000px'
             document.body.style.height = '100%'
         
         let n = Number(num.value)

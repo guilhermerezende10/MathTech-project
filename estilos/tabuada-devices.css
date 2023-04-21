@@ -1,2 +1,156 @@
 @charset "UTF-8";
 
+
+
+/*Typical Device Breackpoints
+
+Pequenas Telas: max 600px
+Celular: min 600px, max 767px
+Tablet: min 768, max1023
+Desktop: min 1024
+Grandes Telas: min 1200px
+
+*/
+
+@media screen and (min-width:768px) {
+
+     input {
+        height: 40px;
+        width: 80px;
+        border: none;
+        background-color: rgb(231, 231, 231);
+        margin-bottom: 20px;
+        text-align: center;
+        
+    }
+
+    #submit {
+        font-family: "poppins";
+    
+        background-color: rgb(204, 204, 204);
+        color: rgb(6, 25, 68);
+    
+        width: 200px;
+        height: 76px;
+        border: none;
+        border-radius: 5px;
+        padding-top: 10px;
+        
+        
+        display: grid;
+        margin: auto;
+
+        font-size: 1em;
+        
+        
+        
+    }
+
+    
+
+    #container  {
+        display: flex;
+        
+        
+        
+    }
+    #container > a {
+        transition: 0.5s;
+        padding: 10px 25px;
+        border-radius: 5px;
+        
+    }
+
+    #menu {
+        display: none;
+        
+    }
+   
+    
+}
+
+
+
+
+    @media screen and (min-width:1024px) {
+        article {
+            display: grid;
+            justify-content: center;
+             
+        }
+    
+        input {
+            height: 40px;
+            width: 80px;
+            border: none;
+            background-color: rgb(231, 231, 231);
+            margin-bottom: 20px;
+            text-align: center;
+            
+        }
+    
+        #submit {
+            font-family: "poppins";
+        
+            background-color: rgb(204, 204, 204);
+            color: rgb(6, 25, 68);
+        
+            width: 200px;
+            height: 76px;
+            border: none;
+            border-radius: 5px;
+            
+            
+            display: grid;
+            margin: auto;
+    
+            font-size: 1em;
+
+            margin-top: 5px;
+            
+            
+        }   
+        
+    }
+        
+
+    @media screen and (min-width:1919px) {
+
+
+        article {
+            display: grid;
+            justify-content: center;
+             
+        }
+
+       
+        input {
+            height: 40px;
+            width: 80px;
+            border: none;
+            background-color: rgb(231, 231, 231);
+            margin-bottom: 20px;
+            text-align: center;
+            
+        }
+    
+        #submit {
+            font-family: "poppins";
+        
+            background-color: rgb(204, 204, 204);
+            color: rgb(6, 25, 68);
+        
+            width: 200px;
+            height: 76px;
+            border: none;
+            border-radius: 5px;
+            
+            
+            display: grid;
+            margin: auto;
+    
+            font-size: 1em;
+            
+            
+        }
+    }
