@@ -124,7 +124,7 @@ function tabuada() {
     } else {
         
             seltab.style.display = 'block'
-            sec.style.height = '2000px'
+            sec.style.height = '2440px'
             document.body.style.height = '100%'
         
         let n = Number(num.value)
