@@ -62,8 +62,13 @@ Grandes Telas: min 1200px
     }
 
     #menu {
+        
         display: none;
         
+    }
+
+    #seltab {
+        height: 600px;
     }
    
     
