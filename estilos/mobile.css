@@ -14,7 +14,7 @@
 }
 
 body {
-    
+
     background: linear-gradient(to left top, #011126, #032859);
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,13 +53,14 @@ section {
 }
 
 #menu {
-    display: block;
+    display: grid;
     margin: 10px;
     text-align: center;
     cursor: pointer;
 }
 
 #container > a {
+
     margin: 1px;
     text-align: center;
     color: white;

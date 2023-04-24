@@ -13,10 +13,11 @@ Grandes Telas: min 1200px
 */
 
 @media screen and (min-width:768px) {
+   
 
-     input {
+    input {
         height: 40px;
-        width: 80px;
+        width: 120px;
         border: none;
         background-color: rgb(231, 231, 231);
         margin-bottom: 20px;
@@ -24,14 +25,20 @@ Grandes Telas: min 1200px
         
     }
 
+    #sec {
+        width: 400px;
+        height: 250px;
+    }
+
+
     #submit {
         font-family: "poppins";
     
         background-color: rgb(204, 204, 204);
         color: rgb(6, 25, 68);
     
-        width: 200px;
-        height: 76px;
+        width: 150px;
+        height: 50px;
         border: none;
         border-radius: 5px;
         padding-top: 10px;
@@ -47,7 +54,6 @@ Grandes Telas: min 1200px
     }
 
     
-
     #container  {
         display: flex;
         
@@ -62,13 +68,8 @@ Grandes Telas: min 1200px
     }
 
     #menu {
-        
         display: none;
         
-    }
-
-    #seltab {
-        height: 600px;
     }
    
     
@@ -78,20 +79,20 @@ Grandes Telas: min 1200px
 
 
     @media screen and (min-width:1024px) {
-        article {
-            display: grid;
-            justify-content: center;
-             
-        }
-    
+       
         input {
             height: 40px;
-            width: 80px;
+            width: 180px;
             border: none;
             background-color: rgb(231, 231, 231);
             margin-bottom: 20px;
             text-align: center;
             
+        }
+
+        #sec {
+            width: 600px;
+            height: 270px;
         }
     
         #submit {
@@ -100,7 +101,7 @@ Grandes Telas: min 1200px
             background-color: rgb(204, 204, 204);
             color: rgb(6, 25, 68);
         
-            width: 200px;
+            width: 180px;
             height: 76px;
             border: none;
             border-radius: 5px;
@@ -114,39 +115,47 @@ Grandes Telas: min 1200px
             margin-top: 5px;
             
             
-        }   
+        }  
         
+        
+   
     }
-        
 
-    @media screen and (min-width:1919px) {
+    @media screen and (min-width:1500px) {
+       
+        #sec {
+            height: 300px;
+            width: 650px;
 
-
-        article {
-            display: grid;
-            justify-content: center;
-             
+            padding: 0px;
         }
 
-       
+        #tabuadaNum > h1 {
+            padding-top: 25px;
+            font-size: 2em;
+        }
+
         input {
             height: 40px;
-            width: 80px;
+            width: 180px;
             border: none;
             background-color: rgb(231, 231, 231);
             margin-bottom: 20px;
             text-align: center;
+
+            font-size: 1em;
             
         }
     
         #submit {
-            font-family: "poppins";
+            font-family: "poppins"; 
+            
         
             background-color: rgb(204, 204, 204);
             color: rgb(6, 25, 68);
         
             width: 200px;
-            height: 76px;
+            height: 55px;
             border: none;
             border-radius: 5px;
             
@@ -158,4 +167,55 @@ Grandes Telas: min 1200px
             
             
         }
+
+    }
+        
+
+    @media screen and (min-width:1919px) {
+
+        #sec {
+            height: 300px;
+            width: 600px;
+
+            padding: 0px;
+        }
+
+        #tabuadaNum > h1 {
+            padding-top: 25px;
+            font-size: 2em;
+        }
+
+        input {
+            height: 40px;
+            width: 180px;
+            border: none;
+            background-color: rgb(231, 231, 231);
+            margin-bottom: 20px;
+            text-align: center;
+
+            font-size: 1.2em;
+            
+        }
+    
+        #submit {
+            font-family: "poppins"; 
+            
+        
+            background-color: rgb(204, 204, 204);
+            color: rgb(6, 25, 68);
+        
+            width: 200px;
+            height: 55px;
+            border: none;
+            border-radius: 5px;
+            
+            
+            display: grid;
+            margin: auto;
+    
+            font-size: 1em;
+            
+            
+        }
+
     }

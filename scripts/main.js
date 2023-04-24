@@ -98,10 +98,10 @@ function VolumeCubo() {
 
 
 function clickMenu() {
-    if (container.style.display == 'block') {
+    if (container.style.display == 'grid') {
         container.style.display = 'none'
     } else {
-        container.style.display = 'block'
+        container.style.display = 'grid'
     }
 }
 

@@ -14,50 +14,53 @@
 }
 
 body {
-
-    height: 100vh;
     
+    height: 100vh;
+
     background: linear-gradient(to left top, #011126, #032859);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
 
-    
-
     font-family: "poppins", sans-serif;
 }
 
 #title {
-    color: white;
     text-align: center;
     font-size: 3em;
 }
 
-h1 {
-    text-align: center;
-    font-size: 2em;
-    color: #011126; 
+#sec {
+    
+
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 350px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.342);
     
 }
+
 
 #container {
     display: grid;
     justify-content: center;
 
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     
 
 }
 
 #menu {
-    display: block;
+    display: grid;
     margin: 10px;
     text-align: center;
     cursor: pointer;
 }
 
 #container > a {
-    display: grid;
+
     margin: 1px;
     text-align: center;
     color: white;
@@ -75,15 +78,24 @@ h1 {
 
 }
 
-
 input {
+    padding: 5px;
     height: 40px;
-    width: 150px;
+    width: 120px;
     border: none;
     background-color: rgb(231, 231, 231);
     margin-bottom: 10px;
+
     text-align: center;
     
+    
+}
+
+#tabuadaNum {
+    text-align: center;
+
+    color: #011126;
+    display: flexbox;
 }
 
 input::-webkit-outer-spin-button,
@@ -92,34 +104,36 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+#submit {
+    font-family: "poppins";
 
+    background-color: rgb(204, 204, 204);
+    color: rgb(6, 25, 68);
 
-header {
-    color: white;
-    text-align: center;
-}
+    width: 130px;
+    height: 40px;
+    
 
-#tabuadaNum {
+    border: none;
+    border-radius: 5px;
+    
     display: grid;
-    justify-items: center;
-    
-
-}
-
-#sec {
-    
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    width: 70vw;
-    height: 200px;
     margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.342);
+
+    text-align: center;
+
+    margin-bottom: 20px;
+    
     
 }
+
+#submit:hover {
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+
 
 #seltab {
-
     display: none;
 
     width: 300px;
@@ -137,21 +151,3 @@ header {
     margin: auto;
 }
 
-#submit {
-
-    background-color: gray;
-    color: white;
-
-    width: 130px;
-    height: 38px;
-    border: none;
-    border-radius: 5px;
-
-
-    
-}
-
-#submit:hover {
-    background-color: rgb(180, 180, 180);
-    cursor: pointer;
-}
