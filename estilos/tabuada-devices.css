@@ -54,23 +54,7 @@ Grandes Telas: min 1200px
     }
 
     
-    #container  {
-        display: flex;
-        
-        
-        
-    }
-    #container > a {
-        transition: 0.5s;
-        padding: 10px 25px;
-        border-radius: 5px;
-        
-    }
-
-    #menu {
-        display: none;
-        
-    }
+    
    
     
 }
@@ -81,8 +65,8 @@ Grandes Telas: min 1200px
     @media screen and (min-width:1024px) {
        
         input {
-            height: 40px;
-            width: 180px;
+            height: 30px;
+            width: 240px;
             border: none;
             background-color: rgb(231, 231, 231);
             margin-bottom: 20px;
@@ -91,8 +75,8 @@ Grandes Telas: min 1200px
         }
 
         #sec {
-            width: 600px;
-            height: 270px;
+            width: 400px;
+            height: 320px;
         }
     
         #submit {
@@ -101,8 +85,8 @@ Grandes Telas: min 1200px
             background-color: rgb(204, 204, 204);
             color: rgb(6, 25, 68);
         
-            width: 180px;
-            height: 76px;
+            width: 120px;
+            height: 45px;
             border: none;
             border-radius: 5px;
             
@@ -115,7 +99,25 @@ Grandes Telas: min 1200px
             margin-top: 5px;
             
             
-        }  
+        } 
+        
+        #container  {
+            display: flex;
+            
+            
+            
+        }
+        #container > a {
+            transition: 0.5s;
+            padding: 10px 25px;
+            border-radius: 5px;
+            
+        }
+    
+        #menu {
+            display: none;
+            
+        }
         
         
    
