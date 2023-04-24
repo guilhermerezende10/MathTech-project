@@ -65,8 +65,8 @@ Grandes Telas: min 1200px
     @media screen and (min-width:1024px) {
        
         input {
-            height: 30px;
-            width: 240px;
+            height: 40px;
+            width: 140px;
             border: none;
             background-color: rgb(231, 231, 231);
             margin-bottom: 20px;
@@ -85,8 +85,8 @@ Grandes Telas: min 1200px
             background-color: rgb(204, 204, 204);
             color: rgb(6, 25, 68);
         
-            width: 120px;
-            height: 45px;
+            width: 150px;
+            height: 55px;
             border: none;
             border-radius: 5px;
             
