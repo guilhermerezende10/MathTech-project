@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathTech home</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img src="images/mt-logo.png" alt="logo" class="nav__logo">
+            <ul class="nav__links">
+                <li class="nav__item">
+                  <a class="nav__link" href="#section--2">Operações Básicas</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#section--3">Áreas e Volumes</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#section--4">Tabuada</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#section--5">Equações</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link nav__link--btn btn--show-modal" href="#"
+                    >Criar conta</a>
+                </li>
+              </ul>
+        </nav>
+        <div class="header__title">
+            <h1>
+                <span class="highlight">MathTech</span> Project
+            </h1>
+            <h4>Um projeto para te ajudar a resolver problemas matemáticos.</h4>
+            <button class="btn--text btn--scroll-to">Veja mais &DownArrow;</button>
+            <img
+                src="images/mt-logo.png"
+                class="header__img"
+                alt="big-logo"/>
+          </div>
+    </header>
+    <section class="section" id="section--1">
+        <div class="section__title">
+            <h2 class="section__description">Utilidade</h2>
+            <h3 class="section__header">Para quê criamos o projeto?</h3>
+        </div>
+        <div class="utilidades">
+            <img
+                src="images/studying.jpg"
+                data-src="img/digital.jpg"
+                alt="Computer"
+                class="utilidades__img lazy-img"
+        />
+        <div class="utilidades__utilidade">
+          <h5 class="utilidades__header">Para você não ficar perdido</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
+            sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
+            debitis ducimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit corrupti ipsa aliquam alias accusamus rerum veniam id quia repellendus! Modi magni consequatur accusantium labore vero repudiandae ex hic libero dolorum?
+          </p>
+        </div>
+    </section>
+    <section class="section" id="section--2">
+        <div class="section__title">
+            <h2 class="section__description">Operações Básicas</h2>
+            <h3 class="section__header">Incluem adição, subtração, multiplicação, divisão, potenciação e radiciação.</h3>
+
+
+
+
+            <div class="operations">
+                <div class="operations__tab-container">
+                  <button
+                    class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+                    <span>01</span>Adição
+                  </button>
+                  <button class="btn operations__tab operations__tab--2" data-tab="2">
+                    <span>02</span>Subtração
+                  </button>
+                  <button class="btn operations__tab operations__tab--3" data-tab="3">
+                    <span>03</span>Multiplicação
+                  </button>
+                  <button class="btn operations__tab operations__tab--4" data-tab="4">
+                    <span>04</span>Divisão
+                  </button>
+                </div>
+                <div
+                  class="operations__content operations__content--1 operations__content--active"
+                >
+                  <div class="operacoes--basicas__content">
+                    <h5 class="operations__header">Adição</h5>
+                    <p>A adição é uma entre as quatro operações básicas da matemática, sendo a primeira operação a ser estudada. O resultado de uma adição entre dois ou mais números é conhecido como soma, e os números a serem somados são conhecidos como parcelas.</p>
+                    <div class="operacoes--basicas__data">
+                        <input type="number" name="número um" class="input" id="adicao__num1" placeholder="Digite um número"> +
+                        <input type="number" name="número dois" class="input" id="adicao__num2" placeholder="Digite um número"> =
+                        <pre id="adicao__result" class="result">    </pre>
+                        <button type="submit" id="adicao__btn" class="btn__operacoes--basicas">Resultado</button>
+                    </div>
+                </div>
+                </div>
+        
+                <div class="operations__content operations__content--2">
+                  <div class="operacoes--basicas__content">
+                    <h5 class="operations__header">Subtração</h5>
+                    <p>A subtração é uma entre as quatro operações básicas da matemática. Sendo a segunda operação matemática a ser estudada, é a operação inversa da adição. O resultado de uma subtração entre dois ou mais números é conhecido como diferença, e os números cuja subtração estamos calculando são, respectivamente, o minuendo e o subtraendo.</p>
+                    <div class="operacoes--basicas__data">
+                        <input type="number" name="número um" class="input" id="sub__num1" placeholder="Digite um número"> -
+                        <input type="number" name="número dois" class="input" id="sub__num2" placeholder="Digite um número"> =
+                        <pre id="sub__result" class="result">    </pre>
+                        <button type="submit" id="sub__btn" class="btn__operacoes--basicas">Resultado</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="operations__content operations__content--3">
+                  <div class="operacoes--basicas__content">
+                    <h5 class="operations__header">Multiplicação</h5>
+                    <p>A multiplicação é uma dentre as quatro operações básicas da Matemática. Conhecemos como multiplicação a soma sucessiva de um número por ele mesmo. O resultado da multiplicação é conhecido como produto, e os números que serão multiplicados são chamados de fatores.</p>
+                    <div class="operacoes--basicas__data">
+                        <input type="number" name="número um" class="input" id="mult__num1" placeholder="Digite um número"> x
+                        <input type="number" name="número dois" class="input" id="mult__num2" placeholder="Digite um número"> =
+                        <pre id="mult__result" class="result">    </pre>
+                        <button type="submit" id="mult__btn" class="btn__operacoes--basicas">Resultado</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="operations__content operations__content--4">
+                    <div class="operacoes--basicas__content">
+                      <h5 class="operations__header">Divisão</h5>
+                      <p>A divisão é uma das quatro operações básicas da matemática e é inversa à multiplicação. A divisão de um número consiste em seu fracionamento, na sua fragmentação, que pode ter como resultado um número inteiro ou um número decimal.</p>
+                      <div class="operacoes--basicas__data">
+                          <input type="number" name="número um" class="input" id="div__num1" placeholder="Digite um número"> /
+                          <input type="number" name="número dois" class="input" id="div__num2" placeholder="Digite um número"> =
+                          <pre id="div__result" class="result">    </pre>
+                          <button type="submit" id="div__btn" class="btn__operacoes--basicas">Resultado</button>
+                      </div>
+                  </div>
+                  </div>
+
+              </div>
+            </section>
+
+
+
+
+        </div>
+    </section>
+    <section class="section" id="section--3">
+        <div class="section__title">
+            <h2 class="section__description"></h2>
+            <h3 class="section__header"></h3>
+        </div>
+    </section>
+    <section class="section" id="section--4">
+        <div class="section__title">
+            <h2 class="section__description"></h2>
+            <h3 class="section__header"></h3>
+        </div>
+    </section>
+    <section class="section" id="section--5">
+        <div class="section__title">
+            <h2 class="section__description"></h2>
+            <h3 class="section__header"></h3>
+        </div>
+    </section>
+
+
+
+    <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+          Crie sua conta no MathTech <span class="highlight">gratuitamente</span>
+        </h2>
+        <form class="modal__form">
+          <label>Nome</label>
+          <input type="text" />
+          <label>Email</label>
+          <input type="email" />
+          <label>Senha</label>
+          <input type="password" />
+          <button class="btn">Prosseguir &rarr;</button>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+</body>
+</html>
