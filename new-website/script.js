@@ -36,6 +36,12 @@ const tabs = document.querySelectorAll(".operations__tab");
 const tabsContainer = document.querySelector(".operations__tab-container");
 const tabsContent = document.querySelectorAll(".operations__content");
 
+
+// Ao reiniciar a página, voltar para o começo
+window.addEventListener('load', function(e) {
+  header.scrollIntoView({ behavior: "smooth" });
+})
+
 // Modal window
 const openModal = function (e) {
     e.preventDefault();
