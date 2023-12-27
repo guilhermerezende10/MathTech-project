@@ -24,6 +24,10 @@ body {
     font-size: 62.5%;
 }
 
+.lazy-img {
+  filter: blur(20px);
+}
+
 /* NAVIGATION */
 .nav {
     background-color: #f3f3f3;
@@ -45,6 +49,7 @@ body {
   .nav__logo {
     height: 9rem;
     transition: all 0.3s;
+    cursor: pointer;
   }
   
   .nav__links {
@@ -185,7 +190,7 @@ body {
   .section__title {
     max-width: 80rem;
     margin: 0 auto 8rem auto;
-    transform: translateY(-3rem);
+    /* transform: translateY(-3rem); */
   }
   
   .section__description {
@@ -208,11 +213,12 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin: 0 12rem;
+    place-items: center;
   }
   
   .utilidades__img {
     width: 80%;
-    transform: translateX(10rem);
+    /* transform: translateX(10rem); */
     max-width: 600px;
     
   }
@@ -221,22 +227,12 @@ body {
     align-self: center;
     justify-self: center;
     width: 70%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   
-  .utilidades__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-primary-opacity);
-    height: 5.5rem;
-    width: 5.5rem;
-    border-radius: 50%;
-    margin-bottom: 2rem;
-  }
-
   .utilidades__header {
     font-size: 2rem;
+    font-weight: 500;
     margin-bottom: 1rem;
   }
   

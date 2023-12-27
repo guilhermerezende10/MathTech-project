@@ -36,6 +36,15 @@ const tabs = document.querySelectorAll(".operations__tab");
 const tabsContainer = document.querySelector(".operations__tab-container");
 const tabsContent = document.querySelectorAll(".operations__content");
 
+const logoLink = document.querySelector('.nav__logo');
+
+// logo link to header
+logoLink.addEventListener('click', function(e) {
+  if (header) {
+    header.scrollIntoView({ behavior: "smooth" });
+  }
+});
+
 
 // Ao reiniciar a página, voltar para o começo
 window.addEventListener('load', function(e) {
@@ -135,7 +144,7 @@ tabsContainer.addEventListener("click", function (e) {
 // Menu fade animation
 
 const handleHover = function (e, opacity, scale, textDecoration) {
-  if (e.target.classList.contains("nav__link")) {
+  if (e.target.classList.contains("nav__link") && !e.target.classList.contains("btn--show-modal")) {
     const link = e.target;
     const siblings = link.closest(".nav").querySelectorAll(".nav__link");
     const logo = link.closest(".nav").querySelector("img");
@@ -196,3 +205,25 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   // section.classList.add('section--hidden');
 });
+
+// Lazy loading images
+const imgTargets = document.querySelectorAll('img[data-src]'); // Selecting all images that has the attribute data-src
+
+const loadImg = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+
+  // Replace src with data-src
+  entry.target.src = entry.target.dataset.src;
+  entry.target.addEventListener('load', function (e) {
+    entry.target.classList.remove('lazy-img');
+  });
+  observer.unobserve(entry.target);
+};
+
+const imgObserver = new IntersectionObserver(loadImg, {
+  root: null,
+  threshold: 0,
+  rootMargin: '-100px',
+});
+imgTargets.forEach(img => imgObserver.observe(img));
