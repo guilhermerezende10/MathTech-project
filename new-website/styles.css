@@ -578,30 +578,33 @@ input[type=number] {
 
   .infoExplicacao {
     display: none;
-    /* display: flex; */
-    /* margin: auto; */
     margin: 10px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    width: 20rem;
-    font-size: 1.5em;
+
+    
 
     color: black;
     background-image: linear-gradient(to right, #011126b7, #074a73b0);
 
     position: absolute;
-    right: 20%;
-    /* transform: translateY(-10rem); */
+    transform: translateX(100%);
+    transform: translateY(100%);
   }
 
   .infoExplicacao h6 {
-    font-weight: 500;
+    font-weight: 700;
     margin-left: 8px;
+    font-size: 1.3em;
+
   }
 
   .infoExplicacao pre {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
     margin-left: 8px;
   }
 

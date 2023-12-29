@@ -137,37 +137,43 @@ divBtn.addEventListener("click", divCalc);
 
 // Info button hover
 
-const active = document.querySelector('.pot--rad__content--active')
-const data = active.querySelector('.pot--rad__data')
-const explicacao = document.querySelector('.infoExplicacao')
-const number = data.querySelector('input')
-const result = data.querySelector('pre')
-
 
 const infoButtonContent = function() {
-  const nums = explicacao.querySelectorAll('#num')
-  nums.forEach(num => num.textContent = number.value)
-  const res = explicacao.querySelector('#infoResult')
-  console.log(res, result)
-  res.textContent = result.textContent
+  const active = document.querySelector('.pot--rad__content--active')
+  const explicacao = active.querySelector('.infoExplicacao')
 
+  const number = active.querySelector('input')
+  const result = active.querySelector('pre')
+  const res = explicacao.querySelector('#infoResult')
+
+  let str = ''
+
+  if (number.value > res.textContent) {
+    str = `${result.textContent} x ${result.textContent} = ${number.value}`
+  }
+  else {
+    str = `${number.value} x ${number.value} = ${result.textContent}`
+  }
+
+  res.textContent = str
+ 
 
   const infoIcon = document.querySelector('.info-icon')
-
   infoIcon.addEventListener('mouseenter', function(e) {
     explicacao.style.display = 'flex'
-  
 })
 
   infoIcon.addEventListener('mouseleave', function(e) {
     explicacao.style.display = 'none'
-  
 })
-
-
 }
 
-const infoButtonHoverCreate = function(num, oper) {
+const infoButtonHoverCreate = function() {
+  const active = document.querySelector('.pot--rad__content--active')
+  const explicacao = active.querySelector('.infoExplicacao')
+
+  const test = document.querySelector('.info-icon')
+  if (test) test.remove()
   explicacao.insertAdjacentHTML( 'beforebegin','<svg xmlns="http://www.w3.org/2000/svg" class="info-icon" height="16" width="16" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119.1 8 256c0 137 111 248 248 248s248-111 248-248C504 119.1 393 8 256 8zm0 110c23.2 0 42 18.8 42 42s-18.8 42-42 42-42-18.8-42-42 18.8-42 42-42zm56 254c0 6.6-5.4 12-12 12h-88c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h12v-64h-12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h64c6.6 0 12 5.4 12 12v100h12c6.6 0 12 5.4 12 12v24z"/></svg>')
 
   infoButtonContent()
@@ -177,9 +183,7 @@ const infoButtonHoverCreate = function(num, oper) {
 
 const potenciacaoRadiciacao = function (num, saida, oper) {
   saida.textContent = oper === "**" ? num.value * num.value : Math.sqrt(num.value);
-  infoButtonHoverCreate(num, oper)
-  // num.value = "";
-  // num.focus();
+  infoButtonHoverCreate()
 };
 
 const potenciacaoCalc = () => potenciacaoRadiciacao(potNum, outPot, '**')
