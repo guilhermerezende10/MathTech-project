@@ -48,8 +48,6 @@
           </div>
     </header>
 
-
-
     <section class="section" id="section--1">
         <div class="section__title">
             <h2 class="section__description">Utilidade</h2>
@@ -161,8 +159,50 @@
     </section>
     <section class="section" id="section--3">
         <div class="section__title">
-            <h2 class="section__description"></h2>
-            <h3 class="section__header"></h3>
+            <h2 class="section__description">Potenciação e Radiciação</h2>
+            <h3 class="section__header">Cálculo e explicação</h3>
+
+            <div class="pot--rad">
+              <div class="pot--rad-container">
+                <button
+                  class="btn pot--rad__tab pot--rad__tab--1 pot--rad__tab--active" data-tab="1">
+                  <span>01</span>Potenciação
+                </button>
+                <button class="btn pot--rad__tab pot--rad__tab--2" data-tab="2">
+                  <span>02</span>Radiciação
+                </button>
+              </div>
+              <div class="pot--rad__content pot--rad__content--1 pot--rad__content--active">
+          
+                  <h5 class="pot--rad__header">Potenciação</h5>
+                  <p>Potenciação é a operação matemática utilizada para escrever de forma resumida números muito grandes, onde é feita a multiplicação de n fatores iguais que se repetem.</p>
+                  <div class="pot--rad__data">
+                      <input type="number" name="número" class="input" id="pot__num" placeholder="Digite um número">
+                      <pre id="pot__result" class="result">    </pre>
+                      <button type="submit" id="pot__btn" class="btn__pot--rad">Resultado</button>
+                      <div class="infoExplicacao">
+                        <h6>Explicação:</h6> 
+                            <p>
+                              <pre id="num"></pre> x
+                              <pre id="num"></pre> =
+                              <pre id="infoResult"></pre>
+                            </p>
+                      </div>
+                  </div>
+          
+              </div>
+      
+              <div class="pot--rad__content pot--rad__content--2">
+                  <h5 class="pot--rad__header">Radiciação</h5>
+                  <p>A radiciação calcula o número que elevado a determinado expoente produz o resultado inverso da potenciação.</p>
+                  <div class="pot--rad__data">
+                      <input type="number" name="número" class="input" id="rad__num" placeholder="Digite um número">
+                      <pre id="rad__result" class="result">    </pre>
+                      <button type="submit" id="rad__btn" class="btn__pot--rad">Resultado</button>
+                  </div>
+              </div>
+
+            </div>
         </div>
     </section>
     <section class="section" id="section--4">
@@ -178,6 +218,10 @@
         </div>
     </section>
 
+
+
+
+    
 
 
     <div class="modal hidden">

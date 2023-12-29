@@ -463,5 +463,150 @@ input[type=number] {
     visibility: hidden;
     opacity: 0;
   }
+
+
+/* Potenciação e Radiciação */
+
+
+.pot--rad__content {
+  display: block;
+  margin: auto;
+  justify-content: center;
+}
+
+.result {
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(184, 184, 184);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 40px;
+    height: 40px;
+    cursor: default;
+}
+
+.pot--rad__data {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__pot--rad{
+    height: 30px;
+    width: 70px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+
+    padding: 0.6rem 2rem;
+    border-radius: 10rem;
+    background-color: #011C40;
+    color: #f3f3f3;
+    /* transform: translateY(-20px); */
+  }
+    
+
+.pot--rad {
+    max-width: 120rem;
+    margin: 12rem auto 0 auto;
   
+    background-color: #fff;
+  }
+  
+  .pot--rad-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pot--rad__tab {
+    width: 10rem;
+    font-size: 1.4em;
+    margin-right: 2.5rem;
+    transform: translateY(-50%);
+  }
+  
+  .pot--rad__tab span {
+    margin-right: 1rem;
+    font-weight: 600;
+    display: inline-block;
+  }
+  
+  .pot--rad__tab--1 {
+    background-color: rgb(65, 8, 99);
+  }
+
+  .pot--rad__tab--2 {
+    background-color: #0b9963;
+  }
+
+  .pot--rad__tab--active {
+    transform: translateY(-100%);
+  }
+  
+  .pot--rad__content {
+    display: none;
+
+    /* JUST PRESENTATIONAL */
+    font-size: 1.3rem;
+    padding: 5rem;
+  }
+  
+  .pot--rad__content--active {
+    display: block;
+    grid-template-columns: 7rem 1fr;
+    column-gap: 3rem;
+    row-gap: 0.5rem;
+  }
+  
+  .pot--rad__header {
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+
+  .pot--rad__content p {
+    grid-column: 2;
+    text-align: left;
+  }
+
+
+  .infoExplicacao {
+    display: none;
+    /* display: flex; */
+    /* margin: auto; */
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 20rem;
+    font-size: 1.5em;
+
+    color: black;
+    background-image: linear-gradient(to right, #011126b7, #074a73b0);
+
+    position: absolute;
+    right: 20%;
+    /* transform: translateY(-10rem); */
+  }
+
+  .infoExplicacao h6 {
+    font-weight: 500;
+    margin-left: 8px;
+  }
+
+  .infoExplicacao pre {
+    margin-left: 8px;
+  }
+
+  .infoExplicacao p {
+    padding: 5px;
+  }
+
   
