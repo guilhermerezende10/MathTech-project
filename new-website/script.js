@@ -148,10 +148,11 @@ const infoButtonContent = function() {
 
   let str = ''
 
-  if (number.value > res.textContent) {
+
+  if (explicacao.classList.contains('rad--info__result')) {
     str = `${result.textContent} x ${result.textContent} = ${number.value}`
   }
-  else {
+  else if (explicacao.classList.contains('pot--info__result')){
     str = `${number.value} x ${number.value} = ${result.textContent}`
   }
 
