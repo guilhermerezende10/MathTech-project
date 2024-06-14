@@ -614,4 +614,53 @@ input[type=number] {
     padding: 5px;
   }
 
-  
+  .tabuada__content {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .tabuada__head {
+    width: 400px;
+    height: 400px;
+    /* background-color: lightgray; */
+    margin: 10px;
+
+    display: block;
+    transform: translateY(30%);
+  }
+
+  .tabuada__result {
+    max-width: 400px;
+    min-width: 100px;
+    max-height: 600px;
+    background-color: lightgray;
+    margin: 10px;
+
+    border-radius: 5px;
+  }
+
+  .btn__tabuada {
+    height: 30px;
+    width: 70px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+
+    padding: 0.6rem 2rem;
+    border-radius: 10rem;
+    background-color: #011C40;
+    color: #f3f3f3;
+  }
+
+  #tab_num {
+    font-size: 1rem;
+  }
+
+  .tabuada__result p {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 10px;
+  }

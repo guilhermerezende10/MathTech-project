@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <img src="images/mt-logo.png" alt="logo" class="nav__logo">
+            <img src="images/mt-icon.png" alt="logo" class="nav__logo">
             <ul class="nav__links">
                 <li class="nav__item">
                   <a class="nav__link" href="#section--2">Operações Básicas</a>
@@ -22,13 +22,13 @@
                   <a class="nav__link" href="#section--3">Potenciação e Radiciação</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#section--5">Áreas e Volumes</a>
+                  <a class="nav__link" href="#section--4">Tabuada</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#section--6">Tabuada</a>
+                  <a class="nav__link" href="#section--5">Equações</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#section--7">Equações</a>
+                  <a class="nav__link" href="#section--6">Áreas e Volumes</a>
                 </li>
                 <li class="nav__item">
                   <a class="nav__link nav__link--btn btn--show-modal" href="#"
@@ -43,7 +43,7 @@
             <h4>Um projeto para te ajudar a resolver problemas matemáticos.</h4>
             <button class="btn--text btn--scroll-to">Veja mais &DownArrow;</button>
               <img
-                  src="images/mt-logo.png"
+                  src="images/mt-icon.png"
                   class="header__img"
                   alt="big-logo"/>
           </div>
@@ -212,8 +212,16 @@
     </section>
     <section class="section" id="section--4">
         <div class="section__title">
-            <h2 class="section__description"></h2>
-            <h3 class="section__header"></h3>
+            <h2 class="section__description">Tabuada</h2>
+            <h3 class="section__header">Tabela usada para definir uma operação de multiplicação de um sistema algébrico.</h3>
+        </div>
+        <div class="tabuada__content">
+          <div class="tabuada__head">
+            <h4>Digite um número para obter sua tabuada:</h4>
+            <input type="number" name="número" class="input" id="tab_num">
+            <button type="submit" class="btn__tabuada">Calcular</button>
+          </div>
+          <div class="tabuada__result"></div>
         </div>
     </section>
     <section class="section" id="section--5">

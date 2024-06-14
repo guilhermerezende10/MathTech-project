@@ -137,61 +137,61 @@ divBtn.addEventListener("click", divCalc);
 
 // Info button hover
 
+const infoButtonContent = function () {
+  const active = document.querySelector(".pot--rad__content--active");
+  const explicacao = active.querySelector(".infoExplicacao");
 
-const infoButtonContent = function() {
-  const active = document.querySelector('.pot--rad__content--active')
-  const explicacao = active.querySelector('.infoExplicacao')
+  const number = active.querySelector("input");
+  const result = active.querySelector("pre");
+  const res = explicacao.querySelector("#infoResult");
 
-  const number = active.querySelector('input')
-  const result = active.querySelector('pre')
-  const res = explicacao.querySelector('#infoResult')
+  let str = "";
 
-  let str = ''
-
-
-  if (explicacao.classList.contains('rad--info__result')) {
-    str = `${result.textContent} x ${result.textContent} = ${number.value}`
-  }
-  else if (explicacao.classList.contains('pot--info__result')){
-    str = `${number.value} x ${number.value} = ${result.textContent}`
+  if (explicacao.classList.contains("rad--info__result")) {
+    str = `${result.textContent} x ${result.textContent} = ${number.value}`;
+  } else if (explicacao.classList.contains("pot--info__result")) {
+    str = `${number.value} x ${number.value} = ${result.textContent}`;
   }
 
-  res.textContent = str
- 
+  res.textContent = str;
 
-  const infoIcon = document.querySelector('.info-icon')
-  infoIcon.addEventListener('mouseenter', function(e) {
-    explicacao.style.display = 'flex'
-})
+  const infoIcon = document.querySelector(".info-icon");
+  infoIcon.addEventListener("mouseenter", function (e) {
+    explicacao.style.display = "flex";
+  });
 
-  infoIcon.addEventListener('mouseleave', function(e) {
-    explicacao.style.display = 'none'
-})
-}
+  infoIcon.addEventListener("mouseleave", function (e) {
+    explicacao.style.display = "none";
+  });
+};
 
-const infoButtonHoverCreate = function() {
-  const active = document.querySelector('.pot--rad__content--active')
-  const explicacao = active.querySelector('.infoExplicacao')
+const infoButtonHoverCreate = function () {
+  const active = document.querySelector(".pot--rad__content--active");
+  const explicacao = active.querySelector(".infoExplicacao");
 
-  const test = document.querySelector('.info-icon')
-  if (test) test.remove()
-  explicacao.insertAdjacentHTML( 'beforebegin','<svg xmlns="http://www.w3.org/2000/svg" class="info-icon" height="16" width="16" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119.1 8 256c0 137 111 248 248 248s248-111 248-248C504 119.1 393 8 256 8zm0 110c23.2 0 42 18.8 42 42s-18.8 42-42 42-42-18.8-42-42 18.8-42 42-42zm56 254c0 6.6-5.4 12-12 12h-88c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h12v-64h-12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h64c6.6 0 12 5.4 12 12v100h12c6.6 0 12 5.4 12 12v24z"/></svg>')
+  const test = document.querySelector(".info-icon");
+  if (test) test.remove();
+  explicacao.insertAdjacentHTML(
+    "beforebegin",
+    '<svg xmlns="http://www.w3.org/2000/svg" class="info-icon" height="16" width="16" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119.1 8 256c0 137 111 248 248 248s248-111 248-248C504 119.1 393 8 256 8zm0 110c23.2 0 42 18.8 42 42s-18.8 42-42 42-42-18.8-42-42 18.8-42 42-42zm56 254c0 6.6-5.4 12-12 12h-88c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h12v-64h-12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h64c6.6 0 12 5.4 12 12v100h12c6.6 0 12 5.4 12 12v24z"/></svg>'
+  );
 
-  infoButtonContent()
-}
+  infoButtonContent();
+};
 
 // Potenciação e Radiciação
 
 const potenciacaoRadiciacao = function (num, saida, oper) {
-  saida.textContent = oper === "**" ? num.value * num.value : Math.sqrt(num.value);
-  infoButtonHoverCreate()
+  saida.textContent =
+    oper === "**" ? num.value * num.value : Math.sqrt(num.value);
+  infoButtonHoverCreate();
 };
 
-const potenciacaoCalc = () => potenciacaoRadiciacao(potNum, outPot, '**')
-const radiciacaoCalc = () => potenciacaoRadiciacao(radNum, outRad, '//')
+const potenciacaoCalc = () => potenciacaoRadiciacao(potNum, outPot, "**");
+const radiciacaoCalc = () => potenciacaoRadiciacao(radNum, outRad, "//");
 
-potBtn.addEventListener('click', potenciacaoCalc)
-radBtn.addEventListener('click', radiciacaoCalc)
+potBtn.addEventListener("click", potenciacaoCalc);
+radBtn.addEventListener("click", radiciacaoCalc);
 
 // Tabbed component
 
@@ -317,3 +317,29 @@ const imgObserver = new IntersectionObserver(loadImg, {
   rootMargin: "-100px",
 });
 imgTargets.forEach((img) => imgObserver.observe(img));
+
+function limparCampos(node) {
+  const contas = document.querySelectorAll('.tabuada__contas');
+  node.parentNode.removeChild(contas);
+}
+
+document
+  .querySelector(".btn__tabuada")
+  .addEventListener("click", function () {
+    const container = document.querySelector(".tabuada__result");
+    // limparCampos(container);
+
+    const numBt = document.getElementById("tab_num");
+    const num = numBt.value;
+    let result = "";
+
+    for(let i = 1; i <= 10; i++) {
+      result += `<p class="tabuada__contas">${num} x ${i} = ${num * i} </p>`
+    }
+
+    console.log(result)
+    container.insertAdjacentHTML('beforeend', result);
+
+    numBt.value = "";
+    numBt.focus()
+  });
