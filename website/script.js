@@ -318,16 +318,18 @@ const imgObserver = new IntersectionObserver(loadImg, {
 });
 imgTargets.forEach((img) => imgObserver.observe(img));
 
-function limparCampos(node) {
+function limparCampos() {
   const contas = document.querySelectorAll('.tabuada__contas');
-  node.parentNode.removeChild(contas);
+  contas.forEach(conta => {
+    conta.parentNode.removeChild(conta);
+  });
 }
 
 document
   .querySelector(".btn__tabuada")
   .addEventListener("click", function () {
     const container = document.querySelector(".tabuada__result");
-    // limparCampos(container);
+    limparCampos();
 
     const numBt = document.getElementById("tab_num");
     const num = numBt.value;
@@ -343,3 +345,16 @@ document
     numBt.value = "";
     numBt.focus()
   });
+
+  document.querySelector('.btn__equa').addEventListener('click', function() {
+    const equa1grau = document.querySelector('.equacao__primeiro-grau')
+    const [ax, b] = equa1grau.querySelectorAll('.input')
+
+    // Verificações
+
+    if(ax.value === 0) return alert('O ax precisa ser diferente de 0 para ser uma equação de 1° grau.')
+
+    
+    console.log(ax, b)
+  })
+

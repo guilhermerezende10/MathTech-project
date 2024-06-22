@@ -640,7 +640,7 @@ input[type=number] {
     border-radius: 5px;
   }
 
-  .btn__tabuada {
+  .btn__tabuada, .btn__equa {
     height: 30px;
     width: 70px;
     margin: 10px;
@@ -655,7 +655,7 @@ input[type=number] {
     color: #f3f3f3;
   }
 
-  #tab_num {
+  #tab_num, #equa_num1, #equa_num2 {
     font-size: 1rem;
   }
 
@@ -664,3 +664,28 @@ input[type=number] {
     text-align: center;
     padding: 10px;
   }
+  
+  .equacao__primeiro-grau {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .equacao__primeiro-grau p {
+    font-size: 1.5rem;
+    transform: translateY(20%);
+  }
+  
+  .equa__result {
+    min-width: 450px;
+    min-height: 50px;
+    background-color: lightgray;
+    display: block;
+    margin-top: 20px; 
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
